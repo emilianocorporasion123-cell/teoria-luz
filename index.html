@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,7 +22,6 @@
             line-height: 1.6;
         }
 
-        /* Estilo de la Red de Fondo */
         .bg-pattern {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -48,16 +48,15 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
-        .meta-info {
+        .meta-info-box {
+            background: var(--border-color);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--bright-green);
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 20px;
+            gap: 15px;
             margin-bottom: 30px;
-            font-size: 0.9rem;
-            color: var(--dark-green);
-            font-weight: bold;
         }
 
         h1 { margin: 0; font-size: 2.2rem; text-transform: uppercase; letter-spacing: 2px; }
@@ -89,6 +88,13 @@
             margin: 10px 0;
         }
 
+        .img-doc {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 1px solid #ddd;
+        }
+
         footer {
             text-align: center;
             padding: 40px;
@@ -104,77 +110,58 @@
 <body>
 
     <div class="bg-pattern"></div>
-</header>
 
-    <div style="text-align: center; margin-top: -30px; position: relative; z-index: 10;">
-        <img src="logo.png" alt="El Prisma de Scras" style="width: 180px; border-radius: 15px; border: 4px solid var(--bright-green); box-shadow: 0 8px 25px rgba(0,0,0,0.2); background: white;">
-    </div>
-
-    <div class="container">
-        <div class="meta-info">
     <header>
         <h1>TEORÍA DE SISTEMAS LUMÍNICOS POR CAPAS</h1>
         <p>Unificación de Óptica, Arquitectura y Fenómenos Atmosféricos</p>
     </header>
 
+    <div style="text-align: center; margin-top: -50px; position: relative; z-index: 10;">
+        <img src="logo.jpg" alt="El Prisma de Scras" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 4px solid var(--bright-green); box-shadow: 0 8px 25px rgba(0,0,0,0.2); background: white;">
+    </div>
+
     <div class="container">
-        <div class="meta-info">
-            <div>AUTOR: EMILIANO J.F.</div>
-            <div>EDAD: 14 AÑOS</div>
-            <div>ORIGEN: EDOMEX, MÉXICO</div>
-            <div>HORA TEÓRICA: 28:20</div>
+        <div class="meta-info-box">
+            <div style="color: var(--dark-green);"><strong>AUTOR:</strong> EMILIANO J.F.</div>
+            <div style="color: var(--dark-green);"><strong>EDAD:</strong> 14 AÑOS</div>
+            <div style="color: var(--dark-green);"><strong>ORIGEN:</strong> EDOMEX, MÉXICO</div>
+            <div style="color: var(--dark-green); border-left: 3px solid var(--bright-green); padding-left: 10px;">
+                <strong>HORA TEÓRICA:</strong> 28:20 💫
+            </div>
         </div>
 
         <div class="content-grid">
-            
             <div class="theory-card">
                 <h2>1. Física y Óptica</h2>
                 <h3>El Espectro de Energía</h3>
                 <p>La luz se organiza en capas de longitud de onda:</p>
                 <ul>
-                    <li><strong>Visible:</strong> Espectro cromático base (Arcoíris).</li>
-                    <li><strong>Invisible:</strong> Infrarrojo (Térmico) y Ultravioleta (Químico).</li>
+                    <li>Visible e Invisible.</li>
                 </ul>
-                <h3>Interferencia</h3>
-                <p>Interacción en láminas delgadas donde las ondas rebotan creando iridiscencia.</p>
-                <code class="formula">E = h * f (Energía por Fotón)</code>
+                <code class="formula">E = h * f</code>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Linear_visible_spectrum.svg/800px-Linear_visible_spectrum.svg.png" alt="Espectro Visible" class="img-doc">
             </div>
 
             <div class="theory-card">
-                <h2>2. Arquitectura y Diseño</h2>
-                <h3>Iluminación Estructural</h3>
-                <p>Aplicación de tres capas críticas para el taller del Arquitecto de lo Imposible:</p>
+                <h2>2. Arquitectura</h2>
+                <h3>Capas de Diseño</h3>
+                <p>Iluminación estructural para el taller del Arquitecto:</p>
                 <ul>
-                    <li><strong>Capa General:</strong> Iluminación base sin sombras.</li>
-                    <li><strong>Capa de Tarea:</strong> Luz focal de alta intensidad.</li>
-                    <li><strong>Capa de Acento:</strong> Definición de texturas y relieve.</li>
+                    <li>Capa General</li>
+                    <li>Capa de Tarea</li>
+                    <li>Capa de Acento</li>
                 </ul>
             </div>
 
             <div class="theory-card full-width">
                 <h2>3. Fenómenos Atmosféricos</h2>
-                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px;">
-                        <h3>Dispersión de Rayleigh</h3>
-                        <p>Las capas de gas atmosférico dispersan preferentemente las longitudes de onda cortas (azul), definiendo el color del firmamento.</p>
-                    </div>
-                    <div style="flex: 1; min-width: 250px;">
-                        <h3>Dinámica del Crepúsculo</h3>
-                        <p>Al ángulo bajo de las 28:20, la luz atraviesa un número mayor de capas atmosféricas, filtrando el espectro hasta dejar pasar solo rojos y naranjas profundos.</p>
-                    </div>
-                </div>
+                <p>A la <strong>Hora Teórica 28:20</strong>, la luz atraviesa el máximo número de capas, creando el efecto de la 💫 ENERJIA DE SCRAP 💫.</p>
             </div>
-
-        </div>
-
-        <div style="margin-top: 50px; text-align: center; border-top: 1px solid #eee; padding-top: 20px;">
-            <p><strong>ESTADO DEL DOCUMENTO: COMPLETO</strong></p>
-            <p style="font-style: italic; color: #7f8c8d;">"La materia le dice a la luz cómo filtrarse, la luz le dice al espacio cómo mostrarse."</p>
         </div>
     </div>
 
     <footer>
-        Propiedad Intelectual de Emiliano J.F. | CI: 145 | Registro 2026
+        Propiedad Intelectual de Emiliano J.F. | CI: 145 | Registro 2026 | 💫 ENERJIA DE SCRAP 💫
     </footer>
 
 </body>
