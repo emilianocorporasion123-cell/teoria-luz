@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría Integral de la Luz | Emiliano J.F.</title>
+    <style>
+        :root {
+            --bright-green: #2ecc71;
+            --dark-green: #1b5e20;
+            --soft-white: #ffffff;
+            --border-color: #e8f5e9;
+        }
+
+        body {
+            background-color: var(--soft-white);
+            color: #2c3e50;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Estilo de la Red de Fondo */
+        .bg-pattern {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(var(--bright-green) 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        header {
+            background: var(--dark-green);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 10px solid var(--bright-green);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -40px auto 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .meta-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            color: var(--dark-green);
+            font-weight: bold;
+        }
+
+        h1 { margin: 0; font-size: 2.2rem; text-transform: uppercase; letter-spacing: 2px; }
+        h2 { color: var(--dark-green); border-bottom: 2px solid var(--bright-green); padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: var(--bright-green); }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .full-width { grid-column: 1 / -1; }
+
+        .theory-card {
+            background: #f9fffb;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .formula {
+            background: #2c3e50;
+            color: var(--bright-green);
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            display: block;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #bdc3c7;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-pattern"></div>
+
+    <header>
+        <h1>TEORÍA DE SISTEMAS LUMÍNICOS POR CAPAS</h1>
+        <p>Unificación de Óptica, Arquitectura y Fenómenos Atmosféricos</p>
+    </header>
+
+    <div class="container">
+        <div class="meta-info">
+            <div>AUTOR: EMILIANO J.F.</div>
+            <div>EDAD: 14 AÑOS</div>
+            <div>ORIGEN: EDOMEX, MÉXICO</div>
+            <div>HORA TEÓRICA: 28:20</div>
+        </div>
+
+        <div class="content-grid">
+            
+            <div class="theory-card">
+                <h2>1. Física y Óptica</h2>
+                <h3>El Espectro de Energía</h3>
+                <p>La luz se organiza en capas de longitud de onda:</p>
+                <ul>
+                    <li><strong>Visible:</strong> Espectro cromático base (Arcoíris).</li>
+                    <li><strong>Invisible:</strong> Infrarrojo (Térmico) y Ultravioleta (Químico).</li>
+                </ul>
+                <h3>Interferencia</h3>
+                <p>Interacción en láminas delgadas donde las ondas rebotan creando iridiscencia.</p>
+                <code class="formula">E = h * f (Energía por Fotón)</code>
+            </div>
+
+            <div class="theory-card">
+                <h2>2. Arquitectura y Diseño</h2>
+                <h3>Iluminación Estructural</h3>
+                <p>Aplicación de tres capas críticas para el taller del Arquitecto de lo Imposible:</p>
+                <ul>
+                    <li><strong>Capa General:</strong> Iluminación base sin sombras.</li>
+                    <li><strong>Capa de Tarea:</strong> Luz focal de alta intensidad.</li>
+                    <li><strong>Capa de Acento:</strong> Definición de texturas y relieve.</li>
+                </ul>
+            </div>
+
+            <div class="theory-card full-width">
+                <h2>3. Fenómenos Atmosféricos</h2>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3>Dispersión de Rayleigh</h3>
+                        <p>Las capas de gas atmosférico dispersan preferentemente las longitudes de onda cortas (azul), definiendo el color del firmamento.</p>
+                    </div>
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3>Dinámica del Crepúsculo</h3>
+                        <p>Al ángulo bajo de las 28:20, la luz atraviesa un número mayor de capas atmosféricas, filtrando el espectro hasta dejar pasar solo rojos y naranjas profundos.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 50px; text-align: center; border-top: 1px solid #eee; padding-top: 20px;">
+            <p><strong>ESTADO DEL DOCUMENTO: COMPLETO</strong></p>
+            <p style="font-style: italic; color: #7f8c8d;">"La materia le dice a la luz cómo filtrarse, la luz le dice al espacio cómo mostrarse."</p>
+        </div>
+    </div>
+
+    <footer>
+        Propiedad Intelectual de Emiliano J.F. | CI: 145 | Registro 2026
+    </footer>
+
+</body>
+</html>
